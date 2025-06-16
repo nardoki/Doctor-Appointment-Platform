@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../../assets/images/logo01.png"
-import {RiLinkedinFill} from 'react-icons/ri'
-import {AiFillYoutube, AiFillGithub, AiOutlineInstagram} from 'react-icons/ai'
+import { RiLinkedinFill } from 'react-icons/ri'
+import { AiFillYoutube, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 
 const socialLinks = [
   {
-    path: "https://www.youtube.com/",
+    path: "https://www.youtube.com//",
     icon: <AiFillYoutube className="group-hover:text-white w-4 h-5" />,
   },
   {
-    path: "https://github.com/Ethronics/AI-Driven-Doctor-Appointment-Platform",
+    path: "https://github.com//",
     icon: <AiFillGithub className="group-hover:text-white w-4 h-5" />,
   },
   {
@@ -57,12 +57,12 @@ const quickLinks02 = [
   },
   {
     path: "/",
-    display: "Get a Opinion",
+    display: "Get an Opinion",
   },
 ]
 
 const quickLinks03 = [
-{
+  {
     path: "/",
     display: "Donate",
   },
@@ -77,13 +77,13 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="pb-16 pt-10">
+    <footer className="bg-black text-white pb-16 pt-10">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           <div>
             <img src={logo} className='w-32 h-22' alt="" />
-            <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
-              Copyright © {year} developed by Dev Squad all right reserved.
+            <p className="text-[16px] leading-7 font-[400] mt-4">
+              Copyright © {year} developed by Dev Squad. All rights reserved.
             </p>
 
             <div className="flex items-center gap-3 mt-4">
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] mb-6">
               Quick Links
             </h2>
 
@@ -106,7 +106,7 @@ const Footer = () => {
                 <li key={index} className="mb-4">
                   <Link 
                     to={item.path} 
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] mb-6">
               I want to:
             </h2>
 
@@ -125,7 +125,7 @@ const Footer = () => {
                 <li key={index} className="mb-4">
                   <Link 
                     to={item.path} 
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] mb-6">
               Support
             </h2>
 
@@ -144,7 +144,7 @@ const Footer = () => {
                 <li key={index} className="mb-4">
                   <Link 
                     to={item.path} 
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -152,8 +152,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          
         </div>
       </div>
     </footer>
@@ -161,13 +159,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-// import React from 'react'
-
-// const Footer = () => {
-//   return (
-//     <div>Footer</div>
-//   )
-// }
-
-// export default Footer
